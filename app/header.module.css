@@ -1,4 +1,30 @@
 .header {
   display: flex;
   background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.navItems {
+  font-size: 18px;
+}
+
+.navItems a:hover {
+  font-weight: bold;
+  cursor: pointer;
 }
