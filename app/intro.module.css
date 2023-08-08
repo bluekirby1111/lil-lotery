@@ -1,0 +1,13 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introText {
+  margin-left: 450;
+  margin-right: 450;
+  text-align: center;
+  font-size: 56px;
+  margin-top: 176px;
+}
