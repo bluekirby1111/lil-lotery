@@ -13,7 +13,7 @@ const navigationItems = ["FAQ", "About us", "Contact"].map((key) => (
 const Header: React.FC<HeaderProperties> = ({ displayText }) => {
   return (
     <div className={styles.header}>
-      <h1 className={styles.title}>lightning</h1>
+      <h1 className={styles.title}>{displayText}</h1>
       <nav>
         <ul className={styles.navList}>{navigationItems}</ul>
       </nav>
@@ -21,4 +21,4 @@ const Header: React.FC<HeaderProperties> = ({ displayText }) => {
   );
 };
 
-export { Header };
+export default Header;
