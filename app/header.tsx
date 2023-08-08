@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 
 interface HeaderProperties {
-  displayText: string;
+  title: string;
 }
 
 const navigationItems = ["FAQ", "About us", "Contact"].map((key) => (
@@ -10,10 +10,10 @@ const navigationItems = ["FAQ", "About us", "Contact"].map((key) => (
   </li>
 ));
 
-const Header: React.FC<HeaderProperties> = ({ displayText }) => {
+const Header: React.FC<HeaderProperties> = ({ title }) => {
   return (
     <div className={styles.header}>
-      <h1 className={styles.title}>{displayText}</h1>
+      <h1 className={styles.title}>{title}</h1>
       <nav>
         <ul className={styles.navList}>{navigationItems}</ul>
       </nav>

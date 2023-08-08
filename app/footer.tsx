@@ -1,14 +1,15 @@
 import styles from "./footer.module.css";
 
-interface HeaderProperties {
-  displayText: string;
+interface FooterProperties {
+  title: string;
+  footerText: string;
 }
 
-const Footer: React.FC<HeaderProperties> = ({ displayText }) => {
+const Footer: React.FC<FooterProperties> = ({ title, footerText }) => {
   return (
     <div className={styles.footer}>
-      <h1 className={styles.title}>{displayText}</h1>
-      <p>© Lightning Lottery. Made in 2023. All rights reserved.</p>
+      <h1 className={styles.title}>{title}</h1>
+      <p>{footerText}</p>
     </div>
   );
 };
