@@ -5,7 +5,7 @@ interface HeaderProperties {
 }
 
 const navigationItems = ["FAQ", "About us", "Contact"].map((key) => (
-  <li className={styles.navItems}>
+  <li key={key} className={styles.navItems}>
     <a href="">{key}</a>
   </li>
 ));
